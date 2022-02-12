@@ -25,3 +25,21 @@ btns.forEach((btn) => {
         value.textContent = count;
     })
 })
+
+
+
+// let count1 = document.getElementById('value');
+// let btnss = document.querySelectorAll('.btn');
+
+// btnss.forEach((btn) => {
+//     btn.addEventListener('click', (e) => {
+//         let count = 0;
+
+//         if(e.currentTarget.classList.contains('increase')) {
+//             count++
+//         }
+        
+
+//         count1.textContent = count;
+//     })
+// })
