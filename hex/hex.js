@@ -10,7 +10,7 @@ btn.addEventListener("click", function() {
         hexColor += hex[colorRandomizer()];
     }
 
-    color.textContent = hexColor;
+    color.textContent = ` ${hexColor}`;
     document.body.style.backgroundColor = hexColor;
 })
 

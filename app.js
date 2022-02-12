@@ -34,14 +34,14 @@ let first = document.querySelector('#pets');
 const colors = ['red', 'green', 'blue', 'gold', 'silver', 'pink', 'orange']
 
 const btn = document.getElementById("btn-1");
-const color = document.querySelector('.color');
+const colorIs = document.querySelector('.color');
 
 btn.addEventListener("click", () => {
     const randomizer = colorRandomizer();
     console.log('hello')
 
     document.body.style.backgroundColor = colors[randomizer];
-    color.textContent = colors[colorRandomizer]
+    colorIs.textContent = ` ${colors[randomizer]}`
     console.log(randomizer)
 })
 
