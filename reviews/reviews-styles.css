@@ -1,11 +1,72 @@
-main {
-    width: 300px;
-    background-color: aquamarine;
-    text-align: center;
-}
-
 #person-img {
     width: 200px;
 }
 
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.title {
+text-align: center;
+}
+
+.container {
+width: 50vw;
+}
+
+.review {
+padding: 1.5rem 2rem;
+text-align: center;
+}
+
+.img-container {
+position: relative;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin: 0 auto;
+margin-bottom: 1.5rem;
+}
+
+#person-img {
+width: 100%;
+display: block;
+height: 100%;
+object-fit: cover;
+border-radius: 50%;
+position: relative;
+}
+
+#author {
+margin-bottom: 0.25rem;
+}
+
+#job {
+margin-bottom: 0.5rem;
+text-transform: uppercase;
+font-size: 0.85rem;
+}
+
+#info {
+margin-bottom: 0.75rem;
+}
+
+.prev-btn,
+.next-btn {
+font-size: 1.25rem;
+background: transparent;
+border-color: transparent;
+margin: 0 0.5rem;
+cursor: pointer;
+}
+
+.random-btn {
+margin-top: 0.5rem;
+padding: 0.25rem 0.5rem;
+text-transform: capitalize;
+cursor: pointer;
+}
 
