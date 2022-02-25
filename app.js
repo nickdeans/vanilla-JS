@@ -48,3 +48,14 @@ btn.addEventListener("click", () => {
 const colorRandomizer = () => {
     return Math.floor(Math.random() * colors.length)
 }
+
+const btn5 = document.querySelector('.buttonW')
+const header = document.querySelector('.headerW')
+
+btn5.addEventListener('click', () => {
+    if(header.classList.contains('waddup')) {
+        header.classList.remove('waddup')
+    } else {
+        header.classList.add('waddup')
+    }
+})
