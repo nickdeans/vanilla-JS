@@ -1,0 +1,99 @@
+#wrapper {
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #e0e0e0;
+  }
+  
+  ol {
+    display: flex;
+    padding: 0;
+    counter-reset: list-items;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  ol li {
+    position: relative;
+    text-align: center;
+    flex-basis: 100%
+  }
+  
+  ol li::before {
+    counter-increment: list-items;
+    content: counter(list-items);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: black solid 4px;
+    margin: 0 auto 8px auto;
+    background-color: white;
+    font-size: 24px;
+  }
+  
+  .selected::before {
+    color: white;
+    background-color: #279600;
+  }
+  
+  ol li:not(:first-of-type)::after {
+    content: "";
+    display: block;
+    width: calc(100% - 30px);
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    left: calc(-50% + calc(30px / 2));
+    top: calc((30px / 2) + 4px - 4px / 2);
+  }
+  
+  ul {
+    padding: 0
+  }
+  
+  ul li {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 12px 0;
+    background-color: white;
+    font-weight: bold;
+    border-left: 5px solid var(--product-color);
+    color: var(--product-color);
+  }
+  
+  .blue-product {
+    --product-color: #626ee3;
+  }
+  
+  .red-product {
+    --product-color: #890023;
+  }
+  
+  .orange-product {
+    --product-color: #f37f1b;
+  }
+  
+  .green-product {
+    --product-color: #11967e;
+  }
+  
+  label {
+    margin-left: 4px;
+  }
+  
+  button {
+    display: block;
+    margin-left: auto;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #02203c;;
+    color: white;
+  }
