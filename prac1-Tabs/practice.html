@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .li-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tabs {
+            margin: 20px;
+            list-style-type: none;
+            border: solid black 5px;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+            padding: 7px;
+            cursor: pointer;
+        }
+
+        .active {
+            color: blueviolet;
+            background-color: coral;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="li-container">
+            <li class="tabs" data-label="0">Tab 1</li>
+            <li class="tabs" data-label="1">Tab 2</li>
+            <li class="tabs" data-label="2">Tab 3</li>
+        </ul>
+    </nav>
+    <div class="div">
+        Hi World
+    </div>
+    <script src="./practice.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Example</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .li-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .tabs {
+            list-style-type: none;
+            margin: 10px;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+            font-size: 25px;
+            border: black solid 5px;
+            padding: 5px;
+        }
+
+        .active {
+            color: blue;
+            background-color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="li-container">
+            <li class="tabs" data-label="0">Tab 1</li>
+            <li class="tabs" data-label="1">Tab 2</li>
+            <li class="tabs" data-label="2">Tab 3</li>
+        </ul>
+    </nav>
+    <div class="div-container">
+        Hello World
+    </div>
+    <script src="./practice.js"></script>
+</body>
+</html>
+ -->
