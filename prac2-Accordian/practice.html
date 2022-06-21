@@ -1,0 +1,148 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            background-color: salmon;
+        }
+
+        .accordian {
+            width: 800px;
+        }
+
+        .contentbx {
+            position: relative;
+            margin: 10px 20px;
+        }
+
+        .label {
+            position: relative;
+            padding: 10px;
+            background-color: royalblue;
+            cursor: pointer;
+        }
+
+        .content {
+            position: relative;
+            background-color: seagreen;
+            cursor: pointer;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            overflow-y: auto;
+        }
+
+        .active .content{
+            height: 100px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="accordian">
+            <div class="contentbx">
+                <h1 class="label">Title</h1>
+                <p class="content">Hello World</p>
+            </div>
+            <div class="contentbx">
+                <h1 class="label">Title</h1>
+                <p class="content">Hello World</p>
+            </div>
+            <div class="contentbx">
+                <h1 class="label">Title</h1>
+                <p class="content">Hello World</p>
+            </div>
+            <div class="contentbx">
+                <h1 class="label">Title</h1>
+                <p class="content">Hello World</p>
+            </div>
+        </div>
+    </main>
+    <script src="./practice.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .content-container {
+            /* margin: 10px; */
+        }
+
+        .title {
+            background-color: blueviolet;
+            padding: 5px;
+        }
+
+        .text {
+            background-color: burlywood;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .active .text{
+            height: 50px;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="main-container">
+        <div>
+            <div class="content-container">
+                <h3 class="title">Title 1</h3>
+                <p class="text">Hello There</p>
+            </div>
+            <div class="content-container">
+                <h3 class="title">Title 2</h3>
+                <p class="text">Hello People</p>
+            </div>        
+            <div class="content-container">
+                <h3 class="title">Title 1</h3>
+                <p class="text">Hello World</p>
+            </div>        
+            <div class="content-container">
+                <h3 class="title">Title 1</h3>
+                <p class="text">HI hi Hi</p>
+            </div>
+        </div>
+    </main>
+    <script src="./practice.js"></script>
+</body>
+</html>
